@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULIR NOTA PEMBELIAN</title>
+    <link rel="stylesheet" href="styleborder.css">
+</head>
+<body>
+    <div class="container">
+    <h1>FORMULIR NOTA PEMBELIAN</h1>
+    <dotted>
+    <strong>
+    <form>
+        Nama Pembeli 
+        <br> 
+        <input type="text" name="nama_lengkap" placeholder="Tulis Nama Anda">
+        <br>
+
+        Alamat Pembeli 
+        <br>
+        <input type="text" name="alamat_lengkap" placeholder="Masukkan Alamat Anda">
+        <br>
+
+        Kode Pos 
+        <br>
+        <input type="text" list="kodePosList" id="kode_pos" name="kode_pos" placeholder="ketikan/pilih kode pos">
+        <datalist id="kodePosList">
+            <option value="50210">50210</option>
+            <option value="50212">50212</option>
+            <option value="50214">50214</option>
+            <option value="50216">50216</option>
+            <option value="50218">50218</option>           
+        </datalist>
+        <br>
+
+        Tanggal Beli 
+        <br>
+        <input type="date">
+        <br>
+        <br>
+
+        Pembayaran 
+        <br>
+        <input type="radio" id="pembayaranlunas" name="pembayaran" value="Lunas"> Lunas
+        <input type="radio" id="pembayaranbelum" name="pembayaran" value="Belum Bayar"> Belum Bayar
+        <input type="radio" id="pembayaranDP" name="pembayaran" value="DP"> DP
+        <input type="number" name="Ketikan nominal angka uang DP" placeholder="Ketikan nominal angka uang DP">
+        <br>
+
+        Jenis Pembayaran 
+        <br>
+        <select id="Metode_Pembayaran" name="Metode_pembayaran">
+            <option value="Pilih">Pilih</option>
+            <option value="Tunai">Tunai</option>
+            <option value="Transfer">Transfer</option>
+        </select>
+        <br>
+
+        Menu 
+        <br>
+        <div class="menu-food">
+        <input type="checkbox" name="Menu" value="Burger"> Burger
+        <input type="number" name="ketikan angka pesanan" placeholder="ketikan angka pesanan">
+        </div>
+        <div class="menu-food">
+        <input type="checkbox" name="Menu" value="Buffalo Wings"> Buffalo Wings
+        <input type="number" name="ketikan angka pesanan" placeholder="ketikan angka pesanan">
+        </div>
+        <div class="menu-food">
+        <input type="checkbox" name="Menu" value="Barbeque Ribs"> Barbeque Ribs
+        <input type="number" name="ketikan angka pesanan" placeholder="ketikan angka pesanan">
+        </div>
+        <div class="menu-food">
+        <input type="checkbox" name="Menu" value="Caesar Salad"> Caesar Salad
+        <input type="number" name="ketikan angka pesanan" placeholder="ketikan angka pesanan">
+        </div>
+        <div class="menu-food">
+        <input type="checkbox" name="Menu" value="Pancakes"> Pancakes
+        <input type="number" name="ketikan angka pesanan" placeholder="ketikan angka pesanan">
+        </div>
+        
+       <div class="buttons">
+        <input type="reset" value="Clear">
+        <input type="submit" value="Send">
+       </div>
+
+
+    </form>
+</div>
+</body>
+</html>
